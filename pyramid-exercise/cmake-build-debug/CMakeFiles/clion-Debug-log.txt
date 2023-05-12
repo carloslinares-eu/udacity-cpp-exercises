@@ -1,0 +1,4 @@
+/home/carloslinares-eu/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/carloslinares-eu/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/ninja/linux/x64/ninja -G Ninja -S /home/carloslinares-eu/Dev/pyramid-exercise -B /home/carloslinares-eu/Dev/pyramid-exercise/cmake-build-debug
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/carloslinares-eu/Dev/pyramid-exercise/cmake-build-debug
