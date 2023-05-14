@@ -3,4 +3,5 @@ project(pyramid_exercise)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(pyramid_exercise main.cpp)
+add_executable(pyramid pyramid/pyramid.cpp)
+add_executable(student student/student.cpp)
