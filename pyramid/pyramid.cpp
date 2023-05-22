@@ -1,8 +1,6 @@
 #include <cassert>
 #include <stdexcept>
 
-// TODO: Define class Pyramid
-
 class Pyramid {
 
 

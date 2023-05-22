@@ -15,7 +15,17 @@ class Student {
   float get_GPA () const {return GPA;}
 
   // mutators
-  void set_name {};
+  void set_name (std::basic_string<char> input_name) {
+      name = std::move(input_name);
+  };
+
+  void set_grade (int input_grade) {
+      grade = input_grade;
+  }
+
+  void get_GPA (float input_GPA) {
+      GPA = input_GPA;
+  }
 
  private:
   std::string name;
@@ -40,4 +50,17 @@ grade (input_grade), GPA (input_GPA) {
 
 
 // TODO: Test
-int main() {}
+int main() {
+    Student valid_student("Karl Linares", 5, 3.9);
+    assert(valid_student.get_name() == "Karl Linares");
+    assert(valid_student.get_grade() == 5);
+    assert(valid_student.get_GPA() == 3.9f);
+
+    bool caught{false};
+    try{
+        Student invalid_student("Karl Linares", -6, 3.9);
+    }
+    catch (...) {
+        caught = true;
+    }
+}
